@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3-dars</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center ">Movies catalog</h1>
+        <div class="box row gx-5">
+            <div class="col-4">
+                <form action="https://echo.htmlacademy.ru/courses" method="POST">
+                    <div class="mb-3">
+                        <input 
+                        class="form-control"
+                        type="text" 
+                        name="user_ave" 
+                        placeholder="ave" 
+                        aria-label="fill in the line"
+                        required>
+                    </div>
+                    <div class="mb-3">
+                        <input 
+                        class="form-control"
+                        type="text" 
+                        name="user_number" 
+                        placeholder="5" 
+                        aria-label="fill in the line"
+                        required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        
+                        <select class="form-select" name="user_solution" required>
+                            <option value="">All</option>
+                            <option value="one">one</option>
+                            <option value="two">two</option>
+                            <option value="three">three</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                        
+                        <input class="form-control" list="countryList" name="user_choice" required  placeholder="Rating (high to low)">
+                        <datalist id="countryList">
+                            <option value="high to low">high to low</option>
+                            <option value="low to high">low to high</option>
+                            
+                        </datalist>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </form>
+                <h2 class="mt-4">Bookmarked movies</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Avengers:Infinity War</strong>
+                        <button type="button" class="btn btn-danger d-block mt-2">Remove</button>
+                    </li>
+                    <li class="list-group-item"><strong>The Avengers</strong>
+                        <button type="button" class="btn btn-danger d-block mt-2">Remove</button>
+                    </li>
+                    <li class="list-group-item"><strong>12 Years a Slave</strong>
+                        <button type="button" class="btn btn-danger d-block mt-2">Remove</button>
+                    </li>
+                    
+                </ul>       
+            </div>
+            <div class="col-8">
+                <h3>Search results:39</h3>
+                <div class="alert alert-info" role="alert">
+                    Use the form on the left to search for a movie 
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card" style="width: 100%;">
+                            <img src="./images/infinity-war.jpg" class="card-img-top img-fluid" alt="The picture shows a moment from the Avengers: Infinity War trailer, the Avengers is written in large font in the foreground, and the official trailer is written in smaller font below, the official trailer is written on the very bottom, there are also characters from Marve comics on Wakanda from left to right Winter Soldier, Black Widow, Captain America , Hulk, commander Dora Milazh, Black Panther and in the background other characters and troops of Wakanda.">
+                            <div class="card-body">
+                                <h4 class="card-title">Avengers:Infinity War</h4>
+                                <div class="d-flex align-items-center mb-3"><img src="./images/calendary.png" width="20" height="20" alt="The picture shows a small illustration of the calendar"><p class="card-text ms-2">2018</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-3"><img src="./images/star.png" width="20" height="20" alt="This little picture of a yellow five-pointed star"><p class="card-text ms-2">8.7</p>
+                                </div>
+                                <div class="d-flex justify-content-between me-auto ms-auto mb-2">
+                                    <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                                    <button type="button" class="btn btn-outline-info">More info</button>
+                                    <button type="button" class="btn btn-outline-success">Bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card" style="width: 100%;">
+                            <img src="./images/avengers.jpg" class="card-img-top img-fluid" alt="The painting depicts a moment from the movie The Avengers and it shows Iron Man in his Mark VI suit against the backdrop of the inside of Stark Tower">
+                            <div class="card-body">
+                                <h4 class="card-title">The Avengers</h4>
+                                <div class="d-flex align-items-center mb-3"><img src="./images/calendary.png" width="20" height="20" alt="The picture shows a small illustration of the calendar"><p class="card-text ms-2">2012</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-3"><img src="./images/star.png" width="20" height="20" alt="This little picture of a yellow five-pointed star"><p class="card-text ms-2">8.1</p>
+                                </div>
+                                <div class="d-flex justify-content-between me-auto ms-auto mb-2">
+                                    <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                                    <button type="button" class="btn btn-outline-info">More info</button>
+                                    <button type="button" class="btn btn-outline-success">Bookmark</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav class="mt-4" aria-label="...">
+                    <ul class="pagination pagination-sm d-flex justify-content-center">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
